@@ -1,6 +1,6 @@
 import './tailwind.css'
 import './magnifying-glass.png'
-
+import './cool-background.png'
 import * as mockroblog from './mockroblog.js'
 window.mockroblog = mockroblog
 
@@ -25,4 +25,8 @@ searchForm.addEventListener('submit', (event) => {
 
 keyword.addEventListener('input', (event) => {
   search(keyword.value)
+})
+
+document.getElementById('DOMContentLoaded', () => {
+  
 })
