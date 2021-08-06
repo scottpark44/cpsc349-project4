@@ -249,7 +249,7 @@ export function getHomeTimeline (username) {
 }
 
 export function postMessage (userId, text) {
-  if (userId > 3) {
+  if (true) {
     const now = new Date()
     const timestamp =
       now.getUTCFullYear() + '-' +

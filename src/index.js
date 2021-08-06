@@ -36,6 +36,7 @@ import * as mockroblog from './mockroblog.js'
 // 	location.replace("../pages/login.html");
 // }
 let myStorage = window.localStorage;
+myStorage.clear();
 let submit_login = document.getElementById("submit_login");
 let wrong = document.getElementById("wrong");
 if(submit_login){submit_login.addEventListener("click", auth_login);}
@@ -51,7 +52,7 @@ function auth_login(){
 	else { 
 		wrong.innerHTML = "<br><center>Logged in successfully!";
 		myStorage.setItem("current_user", authy.username);
-        console.log(myStorage.getItem("current_user"));
+        myStorage.setItem("user_id", authy.id);
         location.replace("./website.html");
 	}	
 }

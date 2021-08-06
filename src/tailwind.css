@@ -68,5 +68,44 @@
     .form__power {
         @apply text-center text-gray-900 text-base animate-pulse pt-2 font-sans text-lg
     }
+
+    .main_cont{
+        @apply hover:bg-gray-800 duration-300 transition ease-in-out
+    }
+
+    .header_cont{
+        @apply flex flex-shrink-0 p-4 pb-0
+    }
+
+    .user_link{
+        @apply flex-shrink-0 group block
+    }
+
+    .user_name_pic{
+        @apply flex items-center
+    }
+
+    .user_img{
+        @apply inline-block h-10 w-10 rounded-full
+    }
+
+    .user_name_cont{
+        @apply ml-3
+    }
     
+    .user_name{
+        @apply text-base leading-6 font-medium text-white
+    }
+
+    .message_cont{
+        @apply pl-16
+    }
+
+    .message_text{
+        @apply text-base w-auto font-medium text-white flex-shrink
+    }
+
+    .break_content{
+        @apply border-gray-800
+    }
 }

@@ -7,6 +7,7 @@ let wrong = document.getElementById("wrong");
 let submit_up = document.getElementById("submit_up");
 if (submit_up) { submit_up.addEventListener("click",auth_up); }
 let myStorage = window.localStorage;
+myStorage.clear();
 
 
 function auth_up() {
@@ -19,8 +20,9 @@ function auth_up() {
         wrong.innerHTML = "The passwords do not match. Please check again.";
     }
     else{
-        mockroblog.createUser(username, email, password);
+        let new_user = mockroblog.createUser(username, email, password);
         myStorage.setItem("current_user", username);
+        myStorage.setItem("user_id", new_user.id);
         location.replace("./website.html");
     }
 
