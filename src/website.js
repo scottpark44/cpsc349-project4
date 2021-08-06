@@ -21,6 +21,7 @@ timelines(mockroblog.getPublicTimeline());
 
 //    IMPLEMENTING JARED'S TWITTER FORMAT THING
 function timelines(timeline_input){
+  element.innerHTML = ''
   let timeline = timeline_input
 
   for(let i = 0; i < timeline.length; i++){
@@ -223,25 +224,25 @@ public_button.onclick = function post_Message(){
 // THIS IS CODE FOR THE SEARCH BAR IF WE'RE EVER GOING TO IMPLEMENT IT
 // Edit 8/6/21: Probably not.... Let's not... LOL
 
-// const searchForm = document.querySelector('#search')
-// const keyword = document.querySelector('#keyword')
+const searchForm = document.querySelector('#search')
+const keyword = document.querySelector('#keyword')
 
-// const resultDiv = document.querySelector('#results')
-// const result = document.querySelector('#result-value')
+const resultDiv = document.querySelector('#results')
+const result = document.querySelector('#posts')
 
-// async function search (term = '') {
-//   const query = encodeURIComponent(`%%${term}%%`)
-//   const response = await fetch(`http://localhost:5000/posts/?text=${query}`)
-//   const data = await response.json()
+async function search (term = '') {
+  const query = encodeURIComponent(`%%${term}%%`)
+  const response = await fetch(`http://localhost:5000/posts/?text=${query}`)
+  const data = await response.json()
 
-//   result.textContent = JSON.stringify(data.resources, null, 2)
-//   resultDiv.hidden = !term
-// }
+  timelines(data.resources)
 
-// searchForm.addEventListener('submit', (event) => {
-//   event.preventDefault()
-// })
+}
 
-// keyword.addEventListener('input', (event) => {
-//   search(keyword.value)
-// })
+searchForm.addEventListener('submit', (event) => {
+  event.preventDefault()
+})
+
+keyword.addEventListener('input', (event) => {
+  search(keyword.value)
+})
