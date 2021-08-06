@@ -1,7 +1,49 @@
 /* Mockroblog client API stubs for prototyping */
 
+let dict = {
+  1: "ProfAvery",
+  2: "KevinAWortman",
+  3: "Beth_CSUF"
+}
+
+let tailwind_class = [
+  "text-2xl",
+  "text-left",
+  "w-3/4",
+  "p-6",
+  "my-2",
+  "font-mono",
+  "whitespace-pre-line",
+  "bg-indigo-600",
+  "rounded-md",
+  "overflow-auto"
+]
+
+let tailwind_class2 = [
+  "text-2xl",
+  "text-center",
+  "w-auto",
+  "p-4",
+  "my-2",
+  "font-mono",
+  "whitespace-pre-line",
+  "bg-indigo-600",
+  "rounded-md"
+]
+
+let user_list = [
+  'ProfAvery', 
+  'KevinAWortman', 
+  'Beth_CSUF'
+]
+
+
+
 export function createUser (username, email, password) {
-  if (['ProfAvery', 'KevinAWortman', 'Beth_CSUF'].indexOf(username) < 0) {
+  if (user_list.indexOf(username) < 0) {
+    
+    user_list.push(username);
+    
     return {
       id: 4,
       username: username,
@@ -224,4 +266,20 @@ export function postMessage (userId, text) {
       timestamp: timestamp
     }
   }
+}
+
+export function getUserName(userId){
+  return dict[userId]
+}
+
+export function tailwind_css(){
+  return tailwind_class
+}
+
+export function tailwind_css2(){
+  return tailwind_class2
+}
+
+export function return_Users(){
+  return user_list
 }
