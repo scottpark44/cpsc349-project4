@@ -1,32 +1,8 @@
 import './tailwind.css'
-import './magnifying-glass.png'
 import './cool-background.png'
-import * as mockroblog from './mockroblog.js'
-window.mockroblog = mockroblog
 
-const searchForm = document.querySelector('#search')
-const keyword = document.querySelector('#keyword')
-
-const resultDiv = document.querySelector('#results')
-const result = document.querySelector('#result-value')
-
-async function search (term = '') {
-  const query = encodeURIComponent(`%%${term}%%`)
-  const response = await fetch(`http://localhost:5000/posts/?text=${query}`)
-  const data = await response.json()
-
-  result.textContent = JSON.stringify(data.resources, null, 2)
-  resultDiv.hidden = !term
+const btn = document.getElementById('form_btn')
+//button works for signing in going straight to the main website page 
+btn.onclick = function () {
+  window.location.assign('./website.html')
 }
-
-searchForm.addEventListener('submit', (event) => {
-  event.preventDefault()
-})
-
-keyword.addEventListener('input', (event) => {
-  search(keyword.value)
-})
-
-document.getElementById('DOMContentLoaded', () => {
-  
-})

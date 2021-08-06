@@ -6,14 +6,11 @@
 @layer components {
    
     body {
-        @apply flex m-0 items-center justify-center text-base bg-cover h-screen bg-cool 
+        @apply flex m-0 items-center justify-center text-base bg-cover h-screen bg-cool
         
     }
-    .something {
-        @apply container max-w-md bg-blue-300 m-4 rounded-xl p-8 shadow-2xl font-sans bg-opacity-50 text-white text-4xl flex 
-    }
     .contained {
-        @apply container max-w-md bg-blue-300 m-4 rounded-xl p-8 shadow-2xl font-sans bg-opacity-50 
+        @apply container max-w-md bg-blue-300 m-4 rounded-xl p-8 shadow-2xl font-sans bg-opacity-50
     }
 
     .form__title {
@@ -47,7 +44,7 @@
         @apply text-red-500 text-sm pt-2
     }
     .form__button {
-        @apply  w-96 pt-2 pb-4 font-bold text-xl border-none rounded-2xl outline-none bg-indigo-500 font-sans
+        @apply  w-96 pt-2 pb-4 font-bold text-xl border-none rounded-2xl outline-none bg-gradient-to-r from-indigo-900 via-blue-300 to-purple-700 font-sans
     
     }
     .form__button:hover {
@@ -69,4 +66,5 @@
         @apply text-center text-gray-900 text-base animate-pulse pt-2 font-sans text-lg
     }
     
-}
+
+} 
