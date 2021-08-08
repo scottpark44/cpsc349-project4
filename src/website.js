@@ -28,7 +28,7 @@ function timelines(timeline_input){
 
     // CREATING ELEMENTS
     const append_container = document.createElement('li')
-    
+
     const main_cont = document.createElement('article')
 
     const header_cont = document.createElement('div')
@@ -58,7 +58,7 @@ function timelines(timeline_input){
     // GET USERNAME AND PICTURE LINK
     user_img.setAttribute("src", "https://cdn.shopify.com/s/files/1/0220/9497/0980/products/Axolotl---Ambystoma-mexicanum_grande.jpg?v=1571152418")
     user_name.innerHTML = mockroblog.getUserName(timeline[i].user_id)
-    
+
     // APPENDING THE ELEMENTS
     user_name_cont.appendChild(user_name)
     user_img_cont.appendChild(user_img)
@@ -124,7 +124,7 @@ message_submit.onclick = function post_Message(){
 
 
   const append_container = document.createElement('li')
-    
+
   const main_cont = document.createElement('article')
 
   const header_cont = document.createElement('div')
@@ -152,7 +152,7 @@ message_submit.onclick = function post_Message(){
 
   user_img.setAttribute("src", "https://cdn.shopify.com/s/files/1/0220/9497/0980/products/Axolotl---Ambystoma-mexicanum_grande.jpg?v=1571152418")
   user_name.innerHTML = window.localStorage.getItem("current_user");
-  
+
   user_name_cont.appendChild(user_name)
   user_img_cont.appendChild(user_img)
   user_name_pic.appendChild(user_img_cont)
@@ -201,7 +201,7 @@ home_button.onclick = function post_Message(){
 
   element.innerHTML = " "
   timelines(mockroblog.getHomeTimeline(window.localStorage.getItem("current_user")))
-  
+
 }
 
 // PUBLIC TIMELINE DISPLAY
@@ -212,7 +212,7 @@ public_button.onclick = function post_Message(){
 
   element.innerHTML = " "
   timelines(mockroblog.getPublicTimeline())
-  
+
 }
 
 

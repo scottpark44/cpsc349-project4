@@ -32,8 +32,8 @@ let tailwind_class2 = [
 ]
 
 let user_list = [
-  'ProfAvery', 
-  'KevinAWortman', 
+  'ProfAvery',
+  'KevinAWortman',
   'Beth_CSUF'
 ]
 
@@ -41,9 +41,9 @@ let user_list = [
 
 export function createUser (username, email, password) {
   if (user_list.indexOf(username) < 0) {
-    
+
     user_list.push(username);
-    
+
     return {
       id: 4,
       username: username,
