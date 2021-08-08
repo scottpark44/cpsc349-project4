@@ -6,6 +6,7 @@ module.exports = {
     index: './src/index.js',
     signUp: './src/signUp.js',
     about: './src/about.js',
+    dm: './src/website.js',
     website: './src/website.js'
   },
   output: {
@@ -29,6 +30,12 @@ module.exports = {
       inject: true,
       chunks: ['about'],
       filename: 'about.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/dm.html',
+      inject: true,
+      chunks: ['dm'],
+      filename: 'dm.html',
     }),
     new HtmlWebpackPlugin({
       template: './src/website.html',
