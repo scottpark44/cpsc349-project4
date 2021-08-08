@@ -215,7 +215,39 @@ public_button.onclick = function post_Message(){
 
 }
 
+// DM system
+let dm_button = document.getElementById("direct_messages")
 
+dm_button.onclick = function post_Message(){
+
+  element.innerHTML = " "
+  timelines(mockroblog.getDM(window.localStorage.getItem("current_user")))
+
+}
+
+// let message_submit = document.getElementById("send_message")
+//
+// message_submit.onclick = function post_Message(){
+//
+//
+//   // GETTING USER'S INPUT
+//   let user_text_input = document.getElementById("text_input").value
+//   document.getElementById("text_input").value = ''
+//   // USING USER'S ID STORED IN LOCALSTORAGE; SEE index.js FOR HOW IT WAS SET.
+//   let message_details = mockroblog.postMessage(window.localStorage.getItem("user_id"), user_text_input)
+//
+//
+//   const append_container = document.createElement('li')
+//
+//   const main_cont = document.createElement('article')
+//
+//   const header_cont = document.createElement('div')
+//   const user_link = document.createElement('a')
+//   const user_name_pic = document.createElement('div')
+//   const user_img_cont = document.createElement('div')
+//   const user_img = document.createElement('img')
+//   const user_name_cont = document.createElement('div')
+//   const user_name = document.createElement('p')
 
 
 
