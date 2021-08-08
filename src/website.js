@@ -16,7 +16,15 @@ if(window.localStorage.getItem("current_user") != null){
 
 
 //  INITIAL/DEFAULT DISPLAY
-timelines(mockroblog.getPublicTimeline());
+
+if(document.title == "Direct Message"){
+  timelines(mockroblog.getDM(window.localStorage.getItem("current_user")))
+}
+else
+{
+  timelines(mockroblog.getPublicTimeline());
+}
+
 
 
 //    IMPLEMENTING JARED'S TWITTER FORMAT THING

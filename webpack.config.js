@@ -6,7 +6,6 @@ module.exports = {
     index: './src/index.js',
     signUp: './src/signUp.js',
     about: './src/about.js',
-    dm: './src/website.js',
     website: './src/website.js'
   },
   output: {
@@ -34,7 +33,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/dm.html',
       inject: true,
-      chunks: ['dm'],
+      chunks: ['website'],
       filename: 'dm.html',
     }),
     new HtmlWebpackPlugin({

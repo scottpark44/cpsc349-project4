@@ -276,25 +276,25 @@ export function getDM (username) {
         {
           id: 2,
           user_id: 1,
-          text: 'FYI: https://www.levels.fyi/still-hiring/',
+          text: 'Bro, do you even lift?',
           timestamp: '2021-07-24 05:11:12'
         },
         {
           id: 3,
           user_id: 1,
-          text: 'Yes, the header file ends in .h. C++ is for masochists.',
+          text: 'No fat shaming here',
           timestamp: '2021-07-24 05:09:12'
         },
         {
           id: 6,
           user_id: 3,
-          text: '#cpsc315 #engr190w NeurIPS is $25 for students and $100 for non-students this year! https://medium.com/@NeurIPSConf/neurips-registration-opens-soon-67111581de99',
+          text: 'Spaghetti code is the best code',
           timestamp: '2021-07-24 05:07:12'
         },
         {
           id: 1,
           user_id: 1,
-          text: 'Meanwhile, at the R1 institution down the street... https://uci.edu/coronavirus/messages/200710-sanitizer-recall.php',
+          text: 'I like my code the way I like my noodles... Spaghetti',
           timestamp: '2021-07-24 05:06:12'
         }
       ]
