@@ -2,13 +2,39 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
+  entry: {
+    index: './src/index.js',
+    signUp: './src/signUp.js',
+    about: './src/about.js',
+    website: './src/website.js'
+  },
   output: {
     clean: true
   },
   plugins: [
     new HtmlWebpackPlugin({
+      template: './src/index.html',
+      inject: true,
+      chunks: ['index'],
       filename: 'index.html',
-      template: path.resolve(__dirname, 'src/index.html')
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/signUp.html',
+      inject: true,
+      chunks: ['signUp'],
+      filename: 'signUp.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/about.html',
+      inject: true,
+      chunks: ['about'],
+      filename: 'about.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/website.html',
+      inject: true,
+      chunks: ['website'],
+      filename: 'website.html'
     })
   ],
   module: {

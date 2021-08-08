@@ -1,0 +1,141 @@
+body {
+  background: #333333;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+ 
+}
+
+li a{
+  display: block;
+  padding: 12px;
+  font-family: sans-serif;
+  font-size: 25px;
+  color: #e0dfdc;
+  margin: 4px;
+  padding-left: 15px;
+  letter-spacing: .1em;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: #CB957D;
+}
+
+.purpose {
+  padding-top: 20px;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 25px;
+  color: #0C023D;
+  margin: 4px;
+  padding-left: 15px;
+  letter-spacing: .1em;
+  color: #FFFFFF;
+}
+.container {
+  max-width: 600px;
+  margin: 3rem auto;
+  color: #616471;
+  padding: 2rem;
+  border-radius: 12px;
+  position: relative;
+  border-color: #e0dfdc;
+}
+
+.button {
+  border-radius: 12px;
+  transform: scale(0.98);
+  width: 150px;
+  height: 25px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: red;
+}
+
+button:hover{
+  background: #CB957D
+}
+
+.titles {
+  padding-top: 20px;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 45px;
+  color: #0C023D;
+  margin: 4px;
+  padding-left: 15px;
+  letter-spacing: .1em;
+  color: #FFFFFF;
+ 
+}
+.creators {
+    padding-top: 20px;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 45px;
+    color: #0C023D;
+    margin: 4px;
+    padding-left: 15px;
+    letter-spacing: .1em;
+    color: #FFFFFF;
+}
+#team {
+  padding-top: 20px;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 20px;
+    color: #0C023D;
+    margin: 4px;
+    padding-left: 15px;
+    letter-spacing: .1em;
+    color: #FFFFFF;
+}
+.moby {
+    padding-top: 20px;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 25px;
+    color: #0C023D;
+    margin: 4px;
+    padding-left: 15px;
+    letter-spacing: .1em;
+    color: #FFFFFF;
+}
+.contact {
+  padding-top: 20px;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 20px;
+  color: #0C023D;
+  margin: 4px;
+  padding-left: 15px;
+  letter-spacing: .1em;
+}
+footer {
+  padding-top: 20px;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 15px;
+  color: #0C023D;
+  margin: 10px;
+  padding-left: 15px;
+  letter-spacing: .1em;
+  color: #FFFFFF;
+}
+
+
